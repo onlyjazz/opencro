@@ -1,0 +1,14 @@
+{
+  "name": "opencro",
+  "version": "1.0.0",
+  "description": "Open Clinical Research Operations system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
