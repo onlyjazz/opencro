@@ -115,7 +115,7 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: var(--font-headline-bold);
-  color: var(--white);
+  color: #FF325D;
   text-decoration: none;
   letter-spacing: 0.05em;
 }
@@ -144,7 +144,7 @@ nav {
 
 /* CTAs */
 .cta-primary {
-  background-color: var(--accent);
+  background-color: #097CF7;
   color: var(--white);
   padding: 0.75rem 1.75rem;
   border-radius: 0;
@@ -159,7 +159,7 @@ nav {
 }
 
 .cta-primary:hover {
-  background-color: #163eb8;
+  background-color: #0860C4;
   transform: translateY(-2px);
 }
 
@@ -351,7 +351,7 @@ nav {
 .buy-offer {
   font-size: 1.5rem;
   font-weight: var(--font-headline-bold);
-  color: var(--accent);
+  color: #097CF7;
   margin-bottom: 1rem;
 }
 
