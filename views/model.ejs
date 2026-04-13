@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <nav class="container" style="padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+      <a href="/" class="logo">OpenCRO</a>
+      <ul class="nav-links">
+        <li><a href="/#model">How it works</a></li>
+        <li><a href="/#buy">Get FDA-ready</a></li>
+        <li><a href="/#model-entry">Start with a model</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+      <a href="/clear" class="cta-primary">Get FDA-Ready – $43K</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="section hero-section">
+      <div class="container">
+        <h1 style="margin-top: 3rem;">Start with a Model</h1>
+        <p class="hero-subhead">See exactly where FDA will push on your system</p>
+      </div>
+    </section>
+
+    <!-- Are you ready? -->
+    <section class="section">
+      <div class="container">
+        <h2>Are you ready for FDA submission?</h2>
+        <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">Most teams don't know until FDA pushes back. We show you exactly where the gaps are before you submit.</p>
+        
+        <div style="margin-top: 3rem; padding: 2rem; background-color: rgba(107, 114, 128, 0.1); border: 1px solid rgba(107, 114, 128, 0.2);">
+          <p style="margin-bottom: 1rem;"><strong>The model reveals:</strong></p>
+          <ul style="list-style: none; padding: 0; margin: 1rem 0; font-size: 1rem; line-height: 2;">
+            <li>— Where your architecture is defensible</li>
+            <li>— Where FDA will ask for more evidence</li>
+            <li>— Which threats need countermeasures</li>
+            <li>— What exploitability actually means for your system</li>
+            <li>— Whether your controls are sufficient</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gap Exposure -->
+    <section class="section">
+      <div class="container">
+        <h2>What the model shows</h2>
+        <div class="two-column" style="margin-top: 2rem;">
+          <div class="column">
+            <h3>Your system</h3>
+            <p>Complete architecture review with focus on critical assets and data flows that matter to FDA.</p>
+          </div>
+          <div class="column">
+            <h3>The threats</h3>
+            <p>Realistic attack scenarios quantified with exploitability — not just a compliance checkbox.</p>
+          </div>
+        </div>
+        <div class="two-column">
+          <div class="column">
+            <h3>Your controls</h3>
+            <p>Countermeasures mapped to actual threats, with evidence of effectiveness.</p>
+          </div>
+          <div class="column">
+            <h3>Residual risk</h3>
+            <p>Quantified risk after controls, with justification FDA actually accepts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What you get -->
+    <section class="section">
+      <div class="container">
+        <h2>What you receive</h2>
+        <ul style="list-style: none; padding: 0; margin: 2rem 0; font-size: 1.1rem; line-height: 2.2;">
+          <li>— Threat model focused on your specific system</li>
+          <li>— Exploitability analysis with risk quantification</li>
+          <li>— Gap analysis showing FDA pushback points</li>
+          <li>— Recommendations for architecture or controls</li>
+          <li>— Clear path forward (submit as-is, modify, or escalate)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section">
+      <div class="container text-center">
+        <h2>Pricing</h2>
+        <div style="margin: 3rem 0; font-size: 1.5rem;">
+          <span style="color: #1E3A8A; font-weight: 700; font-size: 3rem;">$6K</span>
+          <p class="text-gray" style="margin-top: 1rem;">See the gaps before FDA does</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="buy-paths">
+          <div class="buy-path">
+            <h3>Ready for the model?</h3>
+            <p class="buy-description">Tell us about your system and timeline</p>
+            <a href="https://calendly.com" target="_blank" class="cta-primary">Schedule a call</a>
+          </div>
+          <div class="buy-path">
+            <h3>Ready to go straight to clear?</h3>
+            <p class="buy-description">Full submission-ready cybersecurity at fixed price</p>
+            <a href="/clear" class="cta-primary">Get FDA-Ready – $43K</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison note -->
+    <section class="section">
+      <div class="container text-center">
+        <p class="text-gray" style="font-size: 0.95rem; max-width: 600px; margin: 0 auto;">
+          The model is perfect if you're still in architecture phase. If you're heading to submission in the next 6–9 months, Clear gives you everything submission-ready in one engagement.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
