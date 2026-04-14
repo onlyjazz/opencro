@@ -9,9 +9,9 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.set('layout', 'layout');
-app.use(expressLayouts);
 
-// Static files
+// Middleware
+app.use(expressLayouts);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
