@@ -1,57 +1,39 @@
 <%
-const headline = 'Get FDA-Ready';
-const bridge = 'Submission-ready cybersecurity. Fixed price. No rework.';
+const headline = 'Submission-ready cybersecurity.';
+const bridge = 'Fixed price. No rework.';
 %>
 <%- include('partials/hero') %>
 
-    <!-- Outcome -->
-    <section class="section">
-      <div class="container">
-        <h2>What you get</h2>
-        <div class="two-column mt-4">
-          <div class="column">
-            <h3>Submission-ready</h3>
-            <p>Complete threat model with computed residual risk, as FDA expects.</p>
-          </div>
-          <div class="column">
-            <h3>Outcomes not hours</h3>
-            <p>Fixed price. We deliver what passes. No change orders, no surprises.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Deliverables -->
+    <!-- What you walk in with -->
     <section class="section">
       <div class="container">
-        <h2>Deliverables</h2>
+        <h2>What you walk in with</h2>
         <ul>
-          <li>Complete system architecture documentation</li>
-          <li>Threat model with identified threats and vulnerabilities</li>
-          <li>Countermeasures mapped to each threat</li>
-          <li>Exploitability analysis with residual risk quantification</li>
-          <li>Supply chain threats analysis</li>
-          <li>FDA-compliant risk assessment</li>
-          <li>Evidence chain documentation</li>
-          <li>Quarterly audit for your product: exploit intelligence, regulatory updates, real-world incidents</li>
-          <li>One device (volume discount available for multiple device submissions)</li>
+          <li>A complete threat model tied to your system</li>
+          <li>Quantified residual risk — not assumptions</li>
+          <li>Countermeasures mapped to real threats</li>
+          <li>Evidence that your controls actually work</li>
+          <li>Answers to the questions FDA will ask</li>
         </ul>
       </div>
     </section>
 
-    <!-- FDA Expectations -->
+    <!-- FDA Will Push -->
     <section class="section">
       <div class="container">
-        <h2>What FDA expects</h2>
-        <p>FDA cybersecurity review focuses on whether you have:</p>
+        <h2>FDA will push on five things</h2>
         <ul class="fda-expectations">
-          <li>Clear understanding of your system architecture</li>
-          <li>Identified critical assets and data flows</li>
-          <li>Comprehensive threat analysis</li>
-          <li>Appropriate countermeasures for each threat</li>
-          <li>Quantified residual risk with justification</li>
-          <li>Evidence that controls actually work</li>
+          <li>Your system architecture</li>
+          <li>Your critical assets</li>
+          <li>Your threat model</li>
+          <li>Your countermeasures</li>
+          <li>Your residual risk</li>
         </ul>
+        <p class="mt-6" style="font-style: italic; color: #D1D5DB;">If you don't answer these questions, FDA will.</p>
+        <div class="text-center" style="margin-top: 3rem;">
+          <a href="https://calendly.com/danny-lieberman/1-1-call?month=2026-04" target="_blank" class="cta-primary cta-primary-lg">Schedule a call</a>
+        </div>
       </div>
     </section>
 
@@ -61,20 +43,20 @@ const bridge = 'Submission-ready cybersecurity. Fixed price. No rework.';
         <h2>The process</h2>
         <div class="section-highlight">
           <div class="process-step">
-            <h3>1. Architecture Review</h3>
-            <p>Deep dive into your system design, data flows, and critical interfaces.</p>
+            <h3>1. Architecture review</h3>
+            <p>Deep dive into your system and interfaces.</p>
           </div>
           <div class="process-step">
-            <h3>2. Threat Modeling</h3>
-            <p>Identify threats against your assets and quantify exploitability.</p>
+            <h3>2. Threat modeling</h3>
+            <p>Identify threats and quantify exploitability.</p>
           </div>
           <div class="process-step">
-            <h3>3. Countermeasure Mapping</h3>
-            <p>Design controls tied to exploitability, not just compliance checklist.</p>
+            <h3>3. Countermeasures</h3>
+            <p>Design controls tied to real risk.</p>
           </div>
           <div class="process-step">
-            <h3>4. FDA-Ready Documentation</h3>
-            <p>Deliver submission-ready security documentation with evidence chain.</p>
+            <h3>4. Documentation</h3>
+            <p>Submission-ready with evidence chain.</p>
           </div>
         </div>
       </div>
@@ -91,12 +73,45 @@ const bridge = 'Submission-ready cybersecurity. Fixed price. No rework.';
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- Capacity Section -->
     <section class="section">
-      <div class="container text-center">
-        <h2>Ready to get FDA-ready?</h2>
-        <p class="text-gray">Let's talk about your timeline and system</p>
-        <a href="https://calendly.com/danny-lieberman/1-1-call?month=2026-04" target="_blank" class="cta-primary cta-primary-lg">Schedule a call</a>
-        <p class="text-gray">Or <a href="/" class="text-link">start with a Model</a> to see exactly where FDA will push</p>
+      <div class="container">
+        <div class="capacity-display">
+          <div class="capacity-title">Q2 Capacity</div>
+          <div class="capacity-metrics">
+            <div class="capacity-metric">
+              <div class="capacity-number">10</div>
+              <div class="text-gray">total</div>
+            </div>
+            <div class="capacity-metric">
+              <div class="capacity-number">7</div>
+              <div class="text-gray">committed</div>
+            </div>
+            <div class="capacity-metric">
+              <div class="capacity-number">3</div>
+              <div class="text-gray">remaining</div>
+            </div>
+          </div>
+          <p class="text-gray">Engagement-led. No outsourcing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buy Section -->
+    <section class="section" id="buy">
+      <div class="container">
+        <h2 class="text-center mb-4">Submitting in 6–9 months?</h2>
+        <div class="buy-paths">
+          <div class="buy-path">
+            <h3>Clear — $43K</h3>
+            <p class="buy-description">Submission-ready. Fixed price. No rework.</p>
+            <a href="https://calendly.com/danny-lieberman/1-1-call?month=2026-04" target="_blank" class="cta-primary">Schedule a call</a>
+          </div>
+          <div class="buy-path">
+            <h3>Model — $6K</h3>
+            <p class="buy-description">See where FDA will push.</p>
+            <a href="/model" class="cta-secondary">Start with Model</a>
+          </div>
+        </div>
       </div>
     </section>
