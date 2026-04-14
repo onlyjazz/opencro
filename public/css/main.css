@@ -285,7 +285,9 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
+  max-width: 800px;
+  width: fit-content;
 }
 
 .column {
