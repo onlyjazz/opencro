@@ -47,7 +47,7 @@ Left:
 Center (anchor links):
 - How it works (#model)
 - Get FDA-ready (#buy)
-- Start with a model (#model-entry)
+- Stress-test your system (#model-entry)
 - About (#about)
 
 Right (primary CTA):
@@ -84,7 +84,7 @@ Proof:
 
 CTA:
 - Get FDA-Ready – $43K → /clear
-- Start with a model → $6K → /model
+- Stress-test your system → $6K → /model
 
 ### Visual
 Threat model diagram (right side)
@@ -196,7 +196,7 @@ Offer:
 Clear – $43K
 
 Description:
-Submission-ready cybersecurity. Fixed price. No rework.
+Fixed outcome. Fixed price.
 
 CTA:
 Get FDA-Ready → /clear
@@ -212,10 +212,10 @@ Offer:
 Model – $6K
 
 Description:
-We show you exactly where FDA will push
+See where FDA will push
 
 CTA:
-Start with Model → /model
+Stress-test your system
 
 ---
 
@@ -282,7 +282,7 @@ No charge
 
 CTA:
 - Get FDA-Ready – $43K
-- Start with a model – $6K
+- Stress-test your system – $6K
 
 ---
 
@@ -347,7 +347,7 @@ Highlight "EXPLOITABILITY" with accent color
 Only 2 actions:
 
 - Get FDA-Ready – $43K → /clear
-- Start with Model – $6K → /model
+- Stress-test your system – $6K → /model
 
 No other CTAs allowed
 

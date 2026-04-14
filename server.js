@@ -29,7 +29,7 @@ app.get('/clear', (req, res) => {
 
 app.get('/model', (req, res) => {
   res.render('model', {
-    title: 'Start with a Model - OpenCRO'
+    title: 'Stress-test your system - OpenCRO'
   });
 });
 
