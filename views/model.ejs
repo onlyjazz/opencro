@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-  <%- include('partials/nav') %>
-  <main>
-    <!-- Hero -->
-    <section class="section hero-section">
-      <div class="container">
-        <div class="hero">
-          <div class="hero-content">
-            <h1 class="text-hero">Start with a Model</h1>
-            <p class="text-bridge">See exactly where FDA will push on your system</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<%
+const headline = 'Start with a Model';
+const bridge = 'See exactly where FDA will push on your system';
+%>
+<%- include('partials/hero') %>
 
     <!-- Are you ready? -->
     <section class="section">
@@ -117,17 +100,3 @@
         </p>
       </div>
     </section>
-  </main>
-
-  <script>
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-  </script>
-</body>
-</html>

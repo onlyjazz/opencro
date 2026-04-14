@@ -1,0 +1,37 @@
+<section class="section hero-section">
+  <div class="container">
+    <div class="hero">
+      <div class="hero-content">
+        <% if (locals.eyebrow) { %>
+          <p class="text-eyebrow"><%= eyebrow %></p>
+        <% } %>
+        <% if (locals.headline) { %>
+          <h1 class="text-hero"><%- headline %></h1>
+        <% } %>
+        <% if (locals.bridge) { %>
+          <p class="text-bridge"><%- bridge %></p>
+        <% } %>
+        <% if (locals.proof) { %>
+          <p class="text-proof"><%= proof %></p>
+        <% } %>
+        <% if (locals.primaryCTA || locals.secondaryCTA) { %>
+          <div class="hero-ctas">
+            <% if (locals.primaryCTA) { %>
+              <a href="<%= primaryCTA.href %>" class="cta-primary"><%= primaryCTA.text %></a>
+            <% } %>
+            <% if (locals.secondaryCTA) { %>
+              <a href="<%= secondaryCTA.href %>" class="cta-secondary"><%= secondaryCTA.text %></a>
+            <% } %>
+          </div>
+        <% } %>
+      </div>
+      <% if (locals.diagram) { %>
+        <div class="hero-diagram">
+          <div class="hero-diagram-inner">
+            <%- diagram %>
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</section>
