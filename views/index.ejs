@@ -1,26 +1,25 @@
-<%
-const eyebrow = 'Real-world MedTech cybersecurity';
-const headline = 'Cleared by FDA.<br>Survives the<br>real world.';
-const bridge = 'Yesterday you designed for patients.<br>Today you design for survival.';
-const proof = '42 companies • 14 clearances • 0 rework';
-const primaryCTA = { href: '/clear', text: 'Get FDA-Ready – $43K' };
-const secondaryCTA = { href: '/model', text: 'Start with a model – $6K' };
-const diagram = `<svg viewBox="0 0 300 550" width="300" height="550" class="diagram-svg">
-  <rect width="300" height="550" fill="#0B0B0B"/>
-  <text x="150" y="30" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">SYSTEM</text>
-  <line x1="150" y1="45" x2="150" y2="75" stroke="#6B7280" stroke-width="1"/>
-  <text x="150" y="110" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">ASSETS</text>
-  <line x1="150" y1="125" x2="150" y2="155" stroke="#6B7280" stroke-width="1"/>
-  <text x="150" y="190" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">THREATS</text>
-  <line x1="150" y1="205" x2="150" y2="235" stroke="#6B7280" stroke-width="1"/>
-  <text x="150" y="270" text-anchor="middle" fill="#1E3A8A" font-size="12" font-weight="600" letter-spacing="1">EXPLOITABILITY</text>
-  <line x1="150" y1="285" x2="150" y2="315" stroke="#6B7280" stroke-width="1"/>
-  <text x="150" y="350" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">COUNTERMEASURES</text>
-  <line x1="150" y1="365" x2="150" y2="395" stroke="#6B7280" stroke-width="1"/>
-  <text x="150" y="430" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">RESIDUAL RISK</text>
-</svg>`;
-%>
-<%- include('partials/hero') %>
+<%- include('partials/hero', {
+  eyebrow: 'Real-world MedTech cybersecurity',
+  headline: 'Cleared by FDA.<br>Survives the<br>real world.',
+  bridge: 'Yesterday you designed for patients.<br>Today you design for survival.',
+  proof: '42 companies • 14 clearances • 0 rework',
+  primaryCTA: { href: '/clear', text: 'Get FDA-Ready – $43K' },
+  secondaryCTA: { href: '/model', text: 'Start with a model – $6K' },
+  diagram: `<svg viewBox="0 0 300 550" width="300" height="550" class="diagram-svg">
+    <rect width="300" height="550" fill="#0B0B0B"/>
+    <text x="150" y="30" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">SYSTEM</text>
+    <line x1="150" y1="45" x2="150" y2="75" stroke="#6B7280" stroke-width="1"/>
+    <text x="150" y="110" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">ASSETS</text>
+    <line x1="150" y1="125" x2="150" y2="155" stroke="#6B7280" stroke-width="1"/>
+    <text x="150" y="190" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">THREATS</text>
+    <line x1="150" y1="205" x2="150" y2="235" stroke="#6B7280" stroke-width="1"/>
+    <text x="150" y="270" text-anchor="middle" fill="#1E3A8A" font-size="12" font-weight="600" letter-spacing="1">EXPLOITABILITY</text>
+    <line x1="150" y1="285" x2="150" y2="315" stroke="#6B7280" stroke-width="1"/>
+    <text x="150" y="350" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">COUNTERMEASURES</text>
+    <line x1="150" y1="365" x2="150" y2="395" stroke="#6B7280" stroke-width="1"/>
+    <text x="150" y="430" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">RESIDUAL RISK</text>
+  </svg>`
+}) %>
 
     <!-- Section 2: The Divide -->
 <section class="section" id="divide">
