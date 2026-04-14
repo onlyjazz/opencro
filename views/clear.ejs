@@ -7,26 +7,17 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <!-- Header -->
-  <header id="header">
-    <nav class="container" style="padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-      <a href="/" class="logo"><img src="/images/opencro-logo.png" alt="OpenCRO" style="height: 40px; display: flex; align-items: center;"></a>
-      <ul class="nav-links">
-        <li><a href="/#model">How it works</a></li>
-        <li><a href="/#buy">Get FDA-ready</a></li>
-        <li><a href="/#model-entry">Start with a model</a></li>
-        <li><a href="/#about">About</a></li>
-      </ul>
-      <a href="/clear" class="cta-primary">Get FDA-Ready – $43K</a>
-    </nav>
-  </header>
-
+  <%- include('partials/nav') %>
   <main>
     <!-- Hero -->
     <section class="section hero-section">
       <div class="container">
-        <h1 style="margin-top: 3rem;">Get FDA-Ready</h1>
-        <p class="hero-subhead">Submission-ready cybersecurity. Fixed price. No rework.</p>
+        <div class="hero">
+          <div class="hero-content">
+            <h1 class="text-hero">Get FDA-Ready</h1>
+            <p class="text-bridge">Submission-ready cybersecurity. Fixed price. No rework.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -34,7 +25,7 @@
     <section class="section">
       <div class="container">
         <h2>What you get</h2>
-        <div class="two-column" style="margin-top: 2rem;">
+        <div class="two-column mt-4">
           <div class="column">
             <h3>Submission-ready</h3>
             <p>Complete threat model with computed residual risk, as FDA expects.</p>
@@ -51,16 +42,16 @@
     <section class="section">
       <div class="container">
         <h2>Deliverables</h2>
-        <ul style="list-style: none; padding: 0; margin: 2rem 0; font-size: 1.1rem; line-height: 2.2;">
-          <li>— Complete system architecture documentation</li>
-          <li>— Threat model with identified threats and vulnerabilities</li>
-          <li>— Countermeasures mapped to each threat</li>
-          <li>— Exploitability analysis with residual risk quantification</li>
-          <li>— Supply chain threats analysis</li>
-          <li>— FDA-compliant risk assessment</li>
-          <li>— Evidence chain documentation</li>
-          <li>— Quarterly audit for your product: exploit intelligence, regulatory updates, real-world incidents</li>
-          <li>— One device (volume discount available for multiple device submissions)</li>
+        <ul>
+          <li>Complete system architecture documentation</li>
+          <li>Threat model with identified threats and vulnerabilities</li>
+          <li>Countermeasures mapped to each threat</li>
+          <li>Exploitability analysis with residual risk quantification</li>
+          <li>Supply chain threats analysis</li>
+          <li>FDA-compliant risk assessment</li>
+          <li>Evidence chain documentation</li>
+          <li>Quarterly audit for your product: exploit intelligence, regulatory updates, real-world incidents</li>
+          <li>One device (volume discount available for multiple device submissions)</li>
         </ul>
       </div>
     </section>
@@ -70,13 +61,13 @@
       <div class="container">
         <h2>What FDA expects</h2>
         <p>FDA cybersecurity review focuses on whether you have:</p>
-        <ul style="list-style: none; padding: 0; margin: 2rem 0; font-size: 1.1rem; line-height: 2.2; color: #9CA3AF;">
-          <li>— Clear understanding of your system architecture</li>
-          <li>— Identified critical assets and data flows</li>
-          <li>— Comprehensive threat analysis</li>
-          <li>— Appropriate countermeasures for each threat</li>
-          <li>— Quantified residual risk with justification</li>
-          <li>— Evidence that controls actually work</li>
+        <ul class="fda-expectations">
+          <li>Clear understanding of your system architecture</li>
+          <li>Identified critical assets and data flows</li>
+          <li>Comprehensive threat analysis</li>
+          <li>Appropriate countermeasures for each threat</li>
+          <li>Quantified residual risk with justification</li>
+          <li>Evidence that controls actually work</li>
         </ul>
       </div>
     </section>
@@ -85,22 +76,22 @@
     <section class="section">
       <div class="container">
         <h2>The process</h2>
-        <div style="padding: 2rem; background-color: rgba(107, 114, 128, 0.1); border: 1px solid rgba(107, 114, 128, 0.2); margin: 2rem 0;">
-          <div style="margin-bottom: 2rem;">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">1. Architecture Review</h3>
-            <p class="text-gray">Deep dive into your system design, data flows, and critical interfaces.</p>
+        <div class="section-highlight">
+          <div class="process-step">
+            <h3>1. Architecture Review</h3>
+            <p>Deep dive into your system design, data flows, and critical interfaces.</p>
           </div>
-          <div style="margin-bottom: 2rem;">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">2. Threat Modeling</h3>
-            <p class="text-gray">Identify threats against your assets and quantify exploitability.</p>
+          <div class="process-step">
+            <h3>2. Threat Modeling</h3>
+            <p>Identify threats against your assets and quantify exploitability.</p>
           </div>
-          <div style="margin-bottom: 2rem;">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">3. Countermeasure Mapping</h3>
-            <p class="text-gray">Design controls tied to exploitability, not just compliance checklist.</p>
+          <div class="process-step">
+            <h3>3. Countermeasure Mapping</h3>
+            <p>Design controls tied to exploitability, not just compliance checklist.</p>
           </div>
-          <div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">4. FDA-Ready Documentation</h3>
-            <p class="text-gray">Deliver submission-ready security documentation with evidence chain.</p>
+          <div class="process-step">
+            <h3>4. FDA-Ready Documentation</h3>
+            <p>Deliver submission-ready security documentation with evidence chain.</p>
           </div>
         </div>
       </div>
@@ -110,9 +101,9 @@
     <section class="section">
       <div class="container text-center">
         <h2>Pricing</h2>
-        <div style="margin: 3rem 0; font-size: 1.5rem;">
-          <span style="color: #1E3A8A; font-weight: 700; font-size: 3rem;">$43K</span>
-          <p class="text-gray" style="margin-top: 1rem;">Fixed price. Submission-ready. No rework.</p>
+        <div class="pricing-large">
+          <span class="pricing-value">$43K</span>
+          <p class="pricing-subtext">Fixed price. Submission-ready. No rework.</p>
         </div>
       </div>
     </section>
@@ -121,9 +112,9 @@
     <section class="section">
       <div class="container text-center">
         <h2>Ready to get FDA-ready?</h2>
-        <p class="text-gray" style="margin-bottom: 2rem; font-size: 1.125rem;">Let's talk about your timeline and system</p>
-        <a href="https://calendly.com/danny-lieberman/1-1-call?month=2026-04" target="_blank" class="cta-primary" style="padding: 1rem 2rem; font-size: 1rem;">Schedule a call</a>
-        <p class="text-gray" style="margin-top: 2rem;">Or <a href="/" style="color: #1E3A8A; text-decoration: none;">start with a Model</a> to see exactly where FDA will push</p>
+        <p class="text-gray">Let's talk about your timeline and system</p>
+        <a href="https://calendly.com/danny-lieberman/1-1-call?month=2026-04" target="_blank" class="cta-primary cta-primary-lg">Schedule a call</a>
+        <p class="text-gray">Or <a href="/" class="text-link">start with a Model</a> to see exactly where FDA will push</p>
       </div>
     </section>
   </main>

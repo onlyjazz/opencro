@@ -7,216 +7,199 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <!-- Header -->
-  <header id="header">
-    <nav class="container" style="padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-      <a href="/" class="logo"><img src="/images/opencro-logo.png" alt="OpenCRO" style="height: 40px; display: flex; align-items: center;"></a>
-      <ul class="nav-links">
-        <li><a href="#model">How it works</a></li>
-        <li><a href="#buy">Get FDA-Ready</a></li>
-        <li><a href="#model-entry">Start with a Model</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-      <a href="/clear" class="cta-primary">Get FDA-Ready – $43K</a>
-    </nav>
-  </header>
-
+  <%- include('partials/nav') %>
   <main>
-    <!-- Section 1: Hero -->
+    <!-- Hero -->
     <section class="section hero-section">
       <div class="container">
         <div class="hero">
           <div class="hero-content">
-            <h1>Real-world MedTech cybersecurity</h1>
-            <p class="hero-subhead">Cleared by FDA. Survives the real world.</p>
-            
-            <p class="hero-proof">42 companies • 14 clearances • 0 rework requests</p>
+            <p class="text-eyebrow">Real-world MedTech cybersecurity</p>
+            <h1 class="text-hero">Cleared by FDA.<br>Survives the<br>real world.</h1>
+            <p class="text-bridge">Yesterday you designed for patients.<br>Today you design for survival.</p>
+            <p class="text-proof">42 companies • 14 clearances • 0 rework</p>
             <div class="hero-ctas">
               <a href="/clear" class="cta-primary">Get FDA-Ready – $43K</a>
-              <a href="/model" class="cta-secondary">Start with a Model – $6K</a>
+              <a href="/model" class="cta-secondary">Start with a model – $6K</a>
             </div>
           </div>
           <div class="hero-diagram">
-            <svg viewBox="0 0 300 400" width="300" height="400" style="max-width: 100%;">
-              <rect width="300" height="400" fill="#0B0B0B"/>
-              <text x="150" y="40" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">SYSTEM</text>
-              <line x1="150" y1="60" x2="150" y2="80" stroke="#6B7280" stroke-width="1"/>
-              <text x="150" y="110" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">ASSETS</text>
-              <line x1="150" y1="130" x2="150" y2="150" stroke="#6B7280" stroke-width="1"/>
-              <text x="150" y="180" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">THREATS</text>
-              <line x1="150" y1="200" x2="150" y2="220" stroke="#6B7280" stroke-width="1"/>
-              <text x="150" y="250" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">COUNTERMEASURES</text>
-              <line x1="150" y1="270" x2="150" y2="290" stroke="#6B7280" stroke-width="1"/>
-              <text x="150" y="320" text-anchor="middle" fill="#1E3A8A" font-size="12" font-weight="600" letter-spacing="1">EXPLOITABILITY</text>
-              <line x1="150" y1="340" x2="150" y2="360" stroke="#6B7280" stroke-width="1"/>
-              <text x="150" y="390" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">RESIDUAL RISK</text>
-            </svg>
+            <div class="hero-diagram-inner">
+              <svg viewBox="0 0 300 550" width="300" height="550" class="diagram-svg">
+                <rect width="300" height="550" fill="#0B0B0B"/>
+                <text x="150" y="30" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">SYSTEM</text>
+                <line x1="150" y1="45" x2="150" y2="75" stroke="#6B7280" stroke-width="1"/>
+                <text x="150" y="110" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">ASSETS</text>
+                <line x1="150" y1="125" x2="150" y2="155" stroke="#6B7280" stroke-width="1"/>
+                <text x="150" y="190" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">THREATS</text>
+                <line x1="150" y1="205" x2="150" y2="235" stroke="#6B7280" stroke-width="1"/>
+                <text x="150" y="270" text-anchor="middle" fill="#1E3A8A" font-size="12" font-weight="600" letter-spacing="1">EXPLOITABILITY</text>
+                <line x1="150" y1="285" x2="150" y2="315" stroke="#6B7280" stroke-width="1"/>
+                <text x="150" y="350" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">COUNTERMEASURES</text>
+                <line x1="150" y1="365" x2="150" y2="395" stroke="#6B7280" stroke-width="1"/>
+                <text x="150" y="430" text-anchor="middle" fill="#F5F5F5" font-size="12" font-weight="600" letter-spacing="1">RESIDUAL RISK</text>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Section 2: The Divide -->
-    <section class="section" id="divide">
-      <div class="container">
-        <h2 class="text-center">Two types of FDA submissions</h2>
-        <p class="text-center text-gray" style="margin-bottom: 3rem;">FDA can tell the difference in minutes</p>
-        
-        <div class="two-column">
-          <div class="column">
-            <h3>Documentation-driven</h3>
-            <ul>
-              <li>Controls listed</li>
-              <li>Vague risk</li>
-              <li>Reactive</li>
-            </ul>
-          </div>
-          <div class="column">
-            <h3>Model-driven</h3>
-            <ul>
-              <li>Quantified risk</li>
-              <li>Defensible</li>
-              <li>Confident</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 3: Failure Point -->
-    <section class="section" id="failure">
-      <div class="container">
-        <h2>Where submissions break</h2>
-        <ul style="list-style: none; padding: 0; margin: 2rem 0; font-size: 1.1rem; line-height: 2;">
-          <li>— Architecture fixed too early</li>
-          <li>— Interfaces not modeled</li>
-          <li>— Countermeasures not tied to exploitability</li>
-          <li>— No evidence chain</li>
+<section class="section" id="divide">
+  <div class="container">
+    <h2 class="text-center">Two types of FDA submissions</h2>
+    <p class="text-center text-gray mb-4">FDA can tell the difference in minutes</p>
+    <div class="two-column">
+      <div class="column">
+        <h3>Documentation-driven</h3>
+        <ul>
+          <li>Controls listed</li>
+          <li>Vague risk</li>
+          <li>Reactive</li>
         </ul>
-        <p class="text-gray" style="margin-top: 2rem;">You don't see this until FDA pushes – or production breaks</p>
       </div>
-    </section>
-
-    <!-- Section 4: The Model -->
-    <section class="section" id="model">
-      <div class="container">
-        <h2 class="text-center">How we model risk</h2>
-        
-        <div class="threat-model">
-          <div class="threat-model-step">SYSTEM</div>
-          <div class="threat-model-line">↓</div>
-          <div class="threat-model-step">ASSETS</div>
-          <div class="threat-model-line">↓</div>
-          <div class="threat-model-step">THREATS</div>
-          <div class="threat-model-line">↓</div>
-          <div class="threat-model-step">COUNTERMEASURES</div>
-          <div class="threat-model-line">↓</div>
-          <div class="threat-model-step highlight">EXPLOITABILITY</div>
-          <div class="threat-model-line">↓</div>
-          <div class="threat-model-step">RESIDUAL RISK</div>
-        </div>
-        
-        <p class="text-center" style="margin-top: 2rem;">From system architecture → computed residual risk</p>
-        <p class="text-center text-gray" style="margin-top: 1rem;">This is what FDA expects – but rarely receives</p>
-      </div>
-    </section>
-
-    <!-- Section 5: System Overview -->
-    <section class="section" id="overview">
-      <div class="container">
-        <h2 class="text-center">The OpenCRO system</h2>
-        
-        <div class="system-items">
-          <div class="system-item">
-            <h4>Foundation</h4>
-            <p>$3K</p>
-          </div>
-          <div class="system-item">
-            <h4>Model</h4>
-            <p>$6K</p>
-          </div>
-          <div class="system-item">
-            <h4>Operate</h4>
-            <p>$9K/year</p>
-          </div>
-          <div class="system-item highlight">
-            <h4>Clear</h4>
-            <p>$43K</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 6: How to Buy -->
-    <section class="section" id="buy">
-      <div class="container">
-        <h2 class="text-center mb-4">Ready to move forward?</h2>
-        
-        <div class="buy-paths">
-          <div class="buy-path">
-            <h3>Submitting in 6-9 months?</h3>
-            <div class="buy-offer">Clear – $43K</div>
-            <p class="buy-description">Submission-ready cybersecurity. Fixed price. No rework.</p>
-            <a href="/clear" class="cta-primary">Get FDA-Ready</a>
-          </div>
-          <div class="buy-path">
-            <h3>Not sure you're ready?</h3>
-            <div class="buy-offer">Model – $6K</div>
-            <p class="buy-description">We show you exactly where FDA will push</p>
-            <a href="/model" class="cta-secondary">Start with Model</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 7: Scarcity -->
-    <section class="section" id="scarcity">
-      <div class="container">
-        <h2 class="text-center mb-4">Capacity is limited</h2>
-        
-        <div class="capacity-display">
-          <div class="capacity-title">Q2 Capacity</div>
-          <div class="capacity-metrics">
-            <div class="capacity-metric">
-              <div class="capacity-number">10</div>
-              <div class="text-gray">total</div>
-            </div>
-            <div class="capacity-metric">
-              <div class="capacity-number">7</div>
-              <div class="text-gray">committed</div>
-            </div>
-            <div class="capacity-metric">
-              <div class="capacity-number">3</div>
-              <div class="text-gray">remaining</div>
-            </div>
-          </div>
-          <p class="text-gray">Each engagement is led directly. We don't outsource the thinking</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 8: Proof -->
-    <section class="section" id="about">
-      <div class="container">
-        <h2>Who this is for</h2>
-        <ul style="list-style: none; padding: 0; margin: 2rem 0; font-size: 1.1rem; line-height: 2;">
-          <li>— Teams preparing for FDA submission</li>
-          <li>— Any cyber device under section 524B(c)</li>
-          <li>— AI for clinical delivery, diagnosis, monitoring or treatment decisions</li>
-          <li>— Teams that want outcomes not billable hours</li>
-          <li>— Teams that need defensible answers</li>
+      <div class="column">
+        <h3>Model-driven</h3>
+        <ul>
+          <li>Quantified risk</li>
+          <li>Defensible</li>
+          <li>Confident</li>
         </ul>
-        <p class="mt-6">42 companies have already gone through this system</p>
-        <p class="text-gray">Fixed price. Fixed outcome. Zero rework</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Failure Point -->
+<section class="section" id="failure">
+  <div class="container">
+    <h2>Where submissions break</h2>
+    <ul>
+      <li>Architecture fixed too early</li>
+      <li>Interfaces not modeled</li>
+      <li>Countermeasures not tied to exploitability</li>
+      <li>No evidence chain</li>
+    </ul>
+    <p class="text-gray mt-4">You don't see this until FDA pushes – or production breaks</p>
+  </div>
+</section>
+
+<!-- Section 4: The Model -->
+<section class="section" id="model">
+  <div class="container">
+    <h2 class="text-center">How we model risk</h2>
+    <div class="threat-model">
+      <div class="threat-model-step">SYSTEM</div>
+      <div class="threat-model-line">↓</div>
+      <div class="threat-model-step">ASSETS</div>
+      <div class="threat-model-line">↓</div>
+      <div class="threat-model-step">THREATS</div>
+      <div class="threat-model-line">↓</div>
+      <div class="threat-model-step">COUNTERMEASURES</div>
+      <div class="threat-model-line">↓</div>
+      <div class="threat-model-step highlight">EXPLOITABILITY</div>
+      <div class="threat-model-line">↓</div>
+      <div class="threat-model-step">RESIDUAL RISK</div>
+    </div>
+    <p class="text-center mt-4">From system architecture → quantified residual risk</p>
+    <p class="text-center text-gray mt-4">This is what FDA expects – but rarely receives</p>
+  </div>
+</section>
+
+<!-- Section 5: System Overview -->
+<section class="section" id="overview">
+  <div class="container">
+    <h2 class="text-center">The OpenCRO system</h2>
+    <div class="system-items">
+      <div class="system-item">
+        <h4>Foundation</h4>
+        <p>$3K</p>
+      </div>
+      <div class="system-item">
+        <h4>Model</h4>
+        <p>$6K</p>
+      </div>
+      <div class="system-item">
+        <h4>Operate</h4>
+        <p>$9K/year</p>
+      </div>
+      <div class="system-item highlight">
+        <h4>Clear</h4>
+        <p>$43K</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 6: How to Buy -->
+<section class="section" id="buy">
+  <div class="container">
+    <h2 class="text-center mb-4">Ready to move forward?</h2>
+    <div class="buy-paths">
+      <div class="buy-path">
+        <h3>Submitting in 6-9 months?</h3>
+        <div class="buy-offer">Clear – $43K</div>
+        <p class="buy-description">Submission-ready cybersecurity. Fixed price. No rework.</p>
+        <a href="/clear" class="cta-primary">Get FDA-Ready</a>
+      </div>
+      <div class="buy-path">
+        <h3>Not sure you're ready?</h3>
+        <div class="buy-offer">Model – $6K</div>
+        <p class="buy-description">We show you exactly where FDA will push</p>
+        <a href="/model" class="cta-secondary">Start with Model</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 7: Scarcity -->
+<section class="section" id="scarcity">
+  <div class="container">
+    <h2 class="text-center mb-4">Capacity is limited</h2>
+    <div class="capacity-display">
+      <div class="capacity-title">Q2 Capacity</div>
+      <div class="capacity-metrics">
+        <div class="capacity-metric">
+          <div class="capacity-number">10</div>
+          <div class="text-gray">total</div>
+        </div>
+        <div class="capacity-metric">
+          <div class="capacity-number">7</div>
+          <div class="text-gray">committed</div>
+        </div>
+        <div class="capacity-metric">
+          <div class="capacity-number">3</div>
+          <div class="text-gray">remaining</div>
+        </div>
+      </div>
+      <p class="text-gray">Each engagement is led directly. We don't outsource the thinking</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 8: Proof -->
+<section class="section" id="about">
+  <div class="container">
+    <h2>Who this is for</h2>
+    <ul>
+      <li>Teams preparing for FDA submission</li>
+      <li>Any cyber device under section 524B(c)</li>
+      <li>AI for clinical delivery, diagnosis, monitoring or treatment decisions</li>
+      <li>Teams that want outcomes not billable hours</li>
+      <li>Teams that need defensible answers</li>
+    </ul>
+    <p class="mt-6">42 companies have already gone through this system</p>
+    <p class="text-gray">Fixed price. Fixed outcome. Zero rework</p>
+  </div>
+</section>
 
     <!-- Section 9: Final CTA -->
     <section class="section" id="model-entry">
       <div class="container text-center">
         <h2>I'll show you where FDA – and attackers – will push on your system</h2>
-        <a href="https://calendly.com/danny-lieberman/1-1-call?month=2026-04" target="_blank" style="display: inline-block; background-color: #097CF7; color: white; padding: 0.5rem 1.25rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 500; margin-bottom: 2rem; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#0860C4'" onmouseout="this.style.backgroundColor='#097CF7'">No charge</a>
-        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://calendly.com/danny-lieberman/1-1-call?month=2026-04" target="_blank" class="cta-calendly">No charge</a>
+        <div class="hero-ctas">
           <a href="/clear" class="cta-primary">Get FDA-Ready – $43K</a>
           <a href="/model" class="cta-secondary">Start with a Model – $6K</a>
         </div>

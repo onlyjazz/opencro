@@ -7,26 +7,17 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <!-- Header -->
-  <header id="header">
-    <nav class="container" style="padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-      <a href="/" class="logo"><img src="/images/opencro-logo.png" alt="OpenCRO" style="height: 40px; display: flex; align-items: center;"></a>
-      <ul class="nav-links">
-        <li><a href="/#model">How it works</a></li>
-        <li><a href="/#buy">Get FDA-ready</a></li>
-        <li><a href="/#model-entry">Start with a model</a></li>
-        <li><a href="/#about">About</a></li>
-      </ul>
-      <a href="/clear" class="cta-primary">Get FDA-Ready – $43K</a>
-    </nav>
-  </header>
-
+  <%- include('partials/nav') %>
   <main>
     <!-- Hero -->
     <section class="section hero-section">
       <div class="container">
-        <h1 style="margin-top: 3rem;">Start with a Model</h1>
-        <p class="hero-subhead">See exactly where FDA will push on your system</p>
+        <div class="hero">
+          <div class="hero-content">
+            <h1 class="text-hero">Start with a Model</h1>
+            <p class="text-bridge">See exactly where FDA will push on your system</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -34,16 +25,15 @@
     <section class="section">
       <div class="container">
         <h2>Are you ready for FDA submission?</h2>
-        <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">Most teams don't know until FDA pushes back. We show you exactly where the gaps are before you submit.</p>
-        
-        <div style="margin-top: 3rem; padding: 2rem; background-color: rgba(107, 114, 128, 0.1); border: 1px solid rgba(107, 114, 128, 0.2);">
-          <p style="margin-bottom: 1rem;"><strong>The model reveals:</strong></p>
-          <ul style="list-style: none; padding: 0; margin: 1rem 0; font-size: 1rem; line-height: 2;">
-            <li>— Where your architecture is defensible</li>
-            <li>— Where FDA will ask for more evidence</li>
-            <li>— Which threats need countermeasures</li>
-            <li>— What exploitability actually means for your system</li>
-            <li>— Whether your controls are sufficient</li>
+        <p class="mt-4">Most teams don't know until FDA pushes back. We show you exactly where the gaps are before you submit.</p>
+        <div class="section-highlight">
+          <p><strong>The model reveals:</strong></p>
+          <ul>
+            <li>Where your architecture is defensible</li>
+            <li>Where FDA will ask for more evidence</li>
+            <li>Which threats need countermeasures</li>
+            <li>What exploitability actually means for your system</li>
+            <li>Whether your controls are sufficient</li>
           </ul>
         </div>
       </div>
@@ -53,7 +43,7 @@
     <section class="section">
       <div class="container">
         <h2>What the model shows</h2>
-        <div class="two-column" style="margin-top: 2rem;">
+        <div class="two-column mt-4">
           <div class="column">
             <h3>Your system</h3>
             <p>Complete architecture review with focus on critical assets and data flows that matter to FDA.</p>
@@ -80,12 +70,12 @@
     <section class="section">
       <div class="container">
         <h2>What you receive</h2>
-        <ul style="list-style: none; padding: 0; margin: 2rem 0; font-size: 1.1rem; line-height: 2.2;">
-          <li>— Threat model focused on your specific system</li>
-          <li>— Exploitability analysis with risk quantification</li>
-          <li>— Gap analysis showing FDA pushback points</li>
-          <li>— Recommendations for architecture or controls</li>
-          <li>— Clear path forward (submit as-is, modify, or escalate)</li>
+        <ul>
+          <li>Threat model focused on your specific system</li>
+          <li>Exploitability analysis with risk quantification</li>
+          <li>Gap analysis showing FDA pushback points</li>
+          <li>Recommendations for architecture or controls</li>
+          <li>Clear path forward (submit as-is, modify, or escalate)</li>
         </ul>
       </div>
     </section>
@@ -94,9 +84,9 @@
     <section class="section">
       <div class="container text-center">
         <h2>Pricing</h2>
-        <div style="margin: 3rem 0; font-size: 1.5rem;">
-          <span style="color: #1E3A8A; font-weight: 700; font-size: 3rem;">$6K</span>
-          <p class="text-gray" style="margin-top: 1rem;">See the gaps before FDA does</p>
+        <div class="pricing-large">
+          <span class="pricing-value">$6K</span>
+          <p class="pricing-subtext">See the gaps before FDA does</p>
         </div>
       </div>
     </section>
@@ -122,7 +112,7 @@
     <!-- Comparison note -->
     <section class="section">
       <div class="container text-center">
-        <p class="text-gray" style="font-size: 0.95rem; max-width: 600px; margin: 0 auto;">
+        <p class="text-gray comparison-note">
           The model is perfect if you're still in architecture phase. If you're heading to submission in the next 6–9 months, Clear gives you everything submission-ready in one engagement.
         </p>
       </div>

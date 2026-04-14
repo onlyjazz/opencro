@@ -16,6 +16,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-size: 16px;
+  padding-top: 80px;
 }
 
 /* Design System */
@@ -93,7 +94,7 @@ header {
   z-index: 1000;
   background-color: transparent;
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(107, 114, 128, 0.15);
   transition: border-color 0.3s ease;
 }
 
@@ -118,6 +119,21 @@ nav {
   color: #FF325D;
   text-decoration: none;
   letter-spacing: 0.05em;
+}
+
+.logo-image {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .nav-links {
@@ -165,8 +181,8 @@ nav {
 
 .cta-secondary {
   background-color: transparent;
-  color: var(--white);
-  border: 1px solid var(--gray);
+  color: #B4B8C0;
+  border: 1px solid rgba(107, 114, 128, 0.45);
   padding: 0.75rem 1.75rem;
   text-decoration: none;
   font-weight: var(--font-body-medium);
@@ -177,58 +193,89 @@ nav {
 }
 
 .cta-secondary:hover {
-  border-color: var(--white);
+  border-color: var(--gray);
   color: var(--white);
 }
 
+/* Minimal Typography System */
+.text-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #D1D5DB;
+  margin-bottom: 1rem;
+}
+
+.text-hero {
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  font-weight: 600;
+  color: #F5F5F5;
+  margin-bottom: 1.5rem;
+}
+
+.text-bridge {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #D1D5DB;
+  margin-bottom: 2rem;
+}
+
+.text-proof {
+  font-size: 0.9rem;
+  color: #B4B8C0;
+  margin-bottom: 2.5rem;
+}
+
+.text-caption {
+  font-size: 0.8rem;
+  color: #6B7280;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
 /* Hero Section */
+.hero-section {
+  padding-top: 3rem;
+}
+
 .hero {
-  margin-top: 5rem;
+  margin-top: 0;
   padding: 8rem 0;
   display: flex;
-  align-items: center;
-  gap: 4rem;
+  align-items: flex-start;
+  gap: 5rem;
 }
 
 .hero-content {
   flex: 1;
 }
 
-.hero h1 {
-  font-size: 3.5rem;
-  line-height: 1.2;
-  margin-bottom: 1.25rem;
-}
-
-.hero-subhead {
-  font-size: 1.375rem;
-  font-weight: var(--font-body-medium);
-  color: var(--gray);
-  margin-bottom: 1.5rem;
-}
-
-.hero-proof {
-  font-size: 0.95rem;
-  color: var(--gray);
-  margin-bottom: 2.5rem;
-  letter-spacing: 0.05em;
-}
-
 .hero-ctas {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  margin-top: 2.5rem;
 }
 
 .hero-diagram {
   flex: 1;
-  min-height: 400px;
+  min-height: 550px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  background-color: rgba(107, 114, 128, 0.1);
-  border: 1px solid rgba(107, 114, 128, 0.2);
+  padding-top: 0;
+}
+
+.hero-diagram-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diagram-svg {
+  max-width: 100%;
 }
 
 /* Two Column Layout */
@@ -394,6 +441,116 @@ nav {
   font-size: 2rem;
   font-weight: var(--font-headline-bold);
   color: var(--accent);
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+/* Section Background & Borders */
+.section-highlight {
+  background-color: rgba(107, 114, 128, 0.1);
+  border: 1px solid rgba(107, 114, 128, 0.2);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.section-highlight h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-highlight p {
+  color: var(--gray);
+}
+
+.section-highlight ul {
+  margin: 1rem 0;
+}
+
+/* Process Steps */
+.process-step {
+  margin-bottom: 2rem;
+}
+
+.process-step h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.process-step p {
+  color: var(--gray);
+}
+
+/* Hero Subhead */
+.hero-subhead {
+  font-size: 1.25rem;
+  color: var(--gray);
+  margin-top: 1rem;
+}
+
+/* Pricing Large */
+.pricing-large {
+  margin: 3rem 0;
+  font-size: 1.5rem;
+}
+
+.pricing-value {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.pricing-subtext {
+  color: var(--gray);
+  margin-top: 1rem;
+}
+
+/* Calendly Link */
+.cta-calendly {
+  display: inline-block;
+  background-color: #097CF7;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: background-color 0.2s ease;
+}
+
+.cta-calendly:hover {
+  background-color: #0860C4;
+}
+
+/* Large CTA Button */
+.cta-primary-lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.text-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.comparison-note {
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.fda-expectations {
+  color: var(--gray);
 }
 
 /* Spacing Utilities */
