@@ -2,30 +2,30 @@
   <div class="container">
     <div class="hero">
       <div class="hero-content">
-        <% if (locals.eyebrow) { %>
+        <% if (typeof eyebrow !== 'undefined') { %>
           <p class="text-eyebrow"><%= eyebrow %></p>
         <% } %>
-        <% if (locals.headline) { %>
+        <% if (typeof headline !== 'undefined') { %>
           <h1 class="text-hero"><%- headline %></h1>
         <% } %>
-        <% if (locals.bridge) { %>
+        <% if (typeof bridge !== 'undefined') { %>
           <p class="text-bridge"><%- bridge %></p>
         <% } %>
-        <% if (locals.proof) { %>
+        <% if (typeof proof !== 'undefined') { %>
           <p class="text-proof"><%= proof %></p>
         <% } %>
-        <% if (locals.primaryCTA || locals.secondaryCTA) { %>
+        <% if ((typeof primaryCTA !== 'undefined') || (typeof secondaryCTA !== 'undefined')) { %>
           <div class="hero-ctas">
-            <% if (locals.primaryCTA) { %>
+            <% if (typeof primaryCTA !== 'undefined') { %>
               <a href="<%= primaryCTA.href %>" class="cta-primary"><%= primaryCTA.text %></a>
             <% } %>
-            <% if (locals.secondaryCTA) { %>
+            <% if (typeof secondaryCTA !== 'undefined') { %>
               <a href="<%= secondaryCTA.href %>" class="cta-secondary"><%= secondaryCTA.text %></a>
             <% } %>
           </div>
         <% } %>
       </div>
-      <% if (locals.diagram) { %>
+      <% if (typeof diagram !== 'undefined') { %>
         <div class="hero-diagram">
           <div class="hero-diagram-inner">
             <%- diagram %>
