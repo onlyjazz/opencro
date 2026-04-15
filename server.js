@@ -40,6 +40,13 @@ app.get('/stress', (req, res) => {
   });
 });
 
+app.get('/stress-test', (req, res) => {
+  res.render('index', {
+    title: 'Real-world MedTech cybersecurity - survive the real world',
+    scrollTo: 'model-entry'
+  });
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).render('404', { title: 'Page Not Found' });
