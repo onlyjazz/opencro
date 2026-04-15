@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'OpenCRO - FDA Cybersecurity'
+    title: 'Real-world MedTech cybersecurity - survive the real world'
   });
 });
 
@@ -30,6 +30,13 @@ app.get('/clear', (req, res) => {
 app.get('/model', (req, res) => {
   res.render('model', {
     title: 'Stress-test your system - OpenCRO'
+  });
+});
+
+app.get('/stress', (req, res) => {
+  res.render('index', {
+    title: 'Real-world MedTech cybersecurity - survive the real world',
+    scrollTo: 'model-entry'
   });
 });
 

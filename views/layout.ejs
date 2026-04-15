@@ -47,6 +47,16 @@
         }
       });
     });
+
+    // Auto-scroll to section if scrollTo parameter is provided
+    <% if (typeof scrollTo !== 'undefined') { %>
+      window.addEventListener('load', () => {
+        const target = document.getElementById('<%= scrollTo %>');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    <% } %>
   </script>
 </body>
 </html>
