@@ -208,8 +208,8 @@ nav {
 }
 
 .text-hero {
-  font-size: clamp(2.75rem, 5vw, 4.5rem);
-  line-height: 1.05;
+  font-size: clamp(2.25rem, 3.5vw, 3rem);
+  line-height: 1.2;
   font-weight: 600;
   color: #F5F5F5;
   margin-bottom: 1.5rem;
