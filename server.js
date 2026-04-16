@@ -54,7 +54,7 @@ app.use((req, res) => {
   res.status(404).render('404', { title: 'Page Not Found' });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3100;
 app.listen(PORT, () => {
   console.log(`OpenCRO server running on http://localhost:${PORT}`);
 });
