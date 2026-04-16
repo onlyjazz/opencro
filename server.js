@@ -36,14 +36,16 @@ app.get('/model', (req, res) => {
 app.get('/stress', (req, res) => {
   res.render('index', {
     title: 'Real-world MedTech cybersecurity - survive the real world',
-    scrollTo: 'model-entry'
+    scrollTo: 'model-entry',
+    isStress: true
   });
 });
 
 app.get('/stress-test', (req, res) => {
   res.render('index', {
     title: 'Real-world MedTech cybersecurity - survive the real world',
-    scrollTo: 'model-entry'
+    scrollTo: 'model-entry',
+    isStress: true
   });
 });
 
