@@ -34,18 +34,14 @@ app.get('/model', (req, res) => {
 });
 
 app.get('/stress', (req, res) => {
-  res.render('index', {
-    title: 'Real-world MedTech cybersecurity - survive the real world',
-    scrollTo: 'model-entry',
-    isStress: true
+  res.render('stress-test', {
+    title: 'Stress-test your system - OpenCRO'
   });
 });
 
 app.get('/stress-test', (req, res) => {
-  res.render('index', {
-    title: 'Real-world MedTech cybersecurity - survive the real world',
-    scrollTo: 'model-entry',
-    isStress: true
+  res.render('stress-test', {
+    title: 'Stress-test your system - OpenCRO'
   });
 });
 

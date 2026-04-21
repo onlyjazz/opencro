@@ -1,0 +1,53 @@
+<%- include('partials/hero', {
+  eyebrow: 'See how attackers and FDA push on your systems.',
+  headline: 'Stress-test your system',
+  bridge: 'Understand your vulnerabilities before submission.',
+  proof: 'Real-world threat modeling. Real outcomes.',
+  primaryCTA: { href: 'javascript:void(0)', text: 'Schedule a call', onclick: 'document.querySelector("iframe[src*=calendly]")?.scrollIntoView({ behavior: "smooth" })' }
+}) %>
+
+<!-- Video Section -->
+<section class="section" id="stress-video">
+  <div class="container text-center">
+    <h2>How attackers think about your system</h2>
+    <p class="text-gray mt-4">A walkthrough of real-world attack vectors and FDA expectations</p>
+    
+    <div style="margin: 2rem 0; max-width: 100%; aspect-ratio: 16 / 9;">
+      <iframe 
+        width="100%" 
+        height="100%" 
+        src="https://www.youtube.com/embed/on9L0B1E3o0" 
+        title="See how attackers and FDA push on your systems"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Calendly Section -->
+<section class="section" id="calendly-section">
+  <div class="container text-center">
+    <h2>Book your stress-test session</h2>
+    <p class="text-gray mt-4">Pick a time that works for you</p>
+    
+    <div style="margin: 2rem 0;">
+      <iframe 
+        src="https://calendly.com/danny-lieberman/opencro-stress-test?embed_domain=opencro.com&embed_type=Inline" 
+        width="100%" 
+        height="630" 
+        frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Back to Home -->
+<section class="section" id="back-to-home">
+  <div class="container text-center">
+    <p class="text-gray">
+      <a href="/" class="text-link">← Back to home</a>
+    </p>
+  </div>
+</section>
