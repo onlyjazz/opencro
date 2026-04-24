@@ -45,6 +45,12 @@ app.get('/stress-test', (req, res) => {
   });
 });
 
+app.get('/get-peace', (req, res) => {
+  res.render('get-peace', {
+    title: 'Get peace of mind - OpenCRO'
+  });
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).render('404', { title: 'Page Not Found' });
