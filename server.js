@@ -45,6 +45,12 @@ app.get('/stress-test', (req, res) => {
   });
 });
 
+app.get('/assure-revenue', (req, res) => {
+  res.render('assure-revenue', {
+    title: 'Assure Revenue - OpenCRO'
+  });
+});
+
 app.get('/get-peace', (req, res) => {
   res.render('get-peace', {
     title: 'Get peace of mind - OpenCRO'
