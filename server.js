@@ -69,6 +69,18 @@ app.get('/assure-ai-revenue', (req, res) => {
   });
 });
 
+app.get('/assure-revenue-premarket', (req, res) => {
+  res.render('assure-revenue-premarket', {
+    title: 'Assure revenue before FDA delays - OpenCRO'
+  });
+});
+
+app.get('/assure-revenue-deployment', (req, res) => {
+  res.render('assure-revenue-deployment', {
+    title: 'Assure revenue before field failures - OpenCRO'
+  });
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).render('404', { title: 'Page Not Found' });
