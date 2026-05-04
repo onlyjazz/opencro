@@ -65,19 +65,25 @@ app.get('/get-peace', (req, res) => {
 
 app.get('/assure-ai-revenue', (req, res) => {
   res.render('assure-ai-revenue', {
-    title: 'Assure revenue from your AI - OpenCRO'
+    title: 'Assure revenue from your AI - OpenCRO',
+    ogTitle: 'Assure revenue from your AI - OpenCRO',
+    ogDescription: 'ASSURE REVENUE FROM YOUR AI—BEFORE DEALS STALL OR SLIP'
   });
 });
 
 app.get('/assure-revenue-premarket', (req, res) => {
   res.render('assure-revenue-premarket', {
-    title: 'Assure revenue before FDA delays - OpenCRO'
+    title: 'Assure revenue before FDA delays - OpenCRO',
+    ogTitle: 'Assure revenue before FDA delays - OpenCRO',
+    ogDescription: 'ASSURE REVENUE BEFORE FDA DELAYS YOUR SUBMISSION'
   });
 });
 
 app.get('/assure-revenue-deployment', (req, res) => {
   res.render('assure-revenue-deployment', {
-    title: 'Assure revenue before field failures - OpenCRO'
+    title: 'Assure revenue before field failures - OpenCRO',
+    ogTitle: 'Assure revenue before system fails - OpenCRO',
+    ogDescription: 'ASSURE REVENUE BEFORE YOUR SYSTEM FAILS IN THE FIELD'
   });
 });
 
