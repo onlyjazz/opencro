@@ -64,7 +64,7 @@ app.get('/get-peace', (req, res) => {
 });
 
 app.get('/assure-ai-revenue', (req, res) => {
-  res.render('get-peace', {
+  res.render('assure-ai-revenue', {
     title: 'Assure revenue from your AI - OpenCRO'
   });
 });
