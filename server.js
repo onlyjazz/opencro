@@ -51,9 +51,21 @@ app.get('/assure-revenue', (req, res) => {
   });
 });
 
+app.get('/ai-threats', (req, res) => {
+  res.render('ai-threats', {
+    title: 'AI Threats - OpenCRO'
+  });
+});
+
 app.get('/get-peace', (req, res) => {
   res.render('get-peace', {
     title: 'Get peace of mind - OpenCRO'
+  });
+});
+
+app.get('/assure-ai-revenue', (req, res) => {
+  res.render('get-peace', {
+    title: 'Assure revenue from your AI - OpenCRO'
   });
 });
 
