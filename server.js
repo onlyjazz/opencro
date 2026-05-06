@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Real-world MedTech cybersecurity - survive the real world'
+    title: 'OpenCRO - MedTech revenue assurance'
   });
 });
 
@@ -29,19 +29,19 @@ app.get('/clear', (req, res) => {
 
 app.get('/model', (req, res) => {
   res.render('model', {
-    title: 'Stress-test your system - OpenCRO'
+    title: 'Where revenue breaks - OpenCRO'
   });
 });
 
 app.get('/stress', (req, res) => {
   res.render('stress-test', {
-    title: 'Stress-test your system - OpenCRO'
+    title: 'Revenue assurance demo - OpenCRO'
   });
 });
 
 app.get('/stress-test', (req, res) => {
   res.render('stress-test', {
-    title: 'Stress-test your system - OpenCRO'
+    title: 'Revenue assurance demo - OpenCRO'
   });
 });
 
