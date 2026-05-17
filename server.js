@@ -45,6 +45,12 @@ app.get('/stress-test', (req, res) => {
   });
 });
 
+app.get('/fda-cyber', (req, res) => {
+  res.render('fda-cyber', {
+    title: 'Cyber and privacy stress test - OpenCRO'
+  });
+});
+
 app.get('/assure-revenue', (req, res) => {
   res.render('assure-revenue', {
     title: 'Assure Revenue - OpenCRO'
