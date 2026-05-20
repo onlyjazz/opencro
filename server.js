@@ -51,6 +51,12 @@ app.get('/fda-cyber', (req, res) => {
   });
 });
 
+app.get('/patient-safety', (req, res) => {
+  res.render('patient-safety', {
+    title: 'Clinical AI stress test - OpenCRO'
+  });
+});
+
 app.get('/assure-revenue', (req, res) => {
   res.render('assure-revenue', {
     title: 'Assure Revenue - OpenCRO'
