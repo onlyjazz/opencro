@@ -27,9 +27,20 @@ app.get('/clear', (req, res) => {
   });
 });
 
+app.get('/foundation', (req, res) => {
+  res.render('foundation', {
+    title: 'Foundation - OpenCRO'
+  });
+});
+
 app.get('/model', (req, res) => {
   res.render('model', {
     title: 'Where revenue breaks - OpenCRO'
+  });
+});
+app.get('/operate', (req, res) => {
+  res.render('operate', {
+    title: 'Operate - OpenCRO'
   });
 });
 
