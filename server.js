@@ -17,102 +17,102 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'OpenCRO - MedTech revenue assurance'
+    title: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/assure', (req, res) => {
   res.render('assure', {
-    title: 'Assure revenue, reputation, regulatory - OpenCRO'
+    title: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/clear', (req, res) => {
   res.render('assure', {
-    title: 'Assure revenue, reputation, regulatory - OpenCRO'
+    title: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/foundation', (req, res) => {
   res.render('foundation', {
-    title: 'Foundation - OpenCRO'
+    title: 'OpenCRO Foundation'
   });
 });
 
 app.get('/model', (req, res) => {
   res.render('model', {
-    title: 'Where revenue breaks - OpenCRO'
+    title: 'OpenCRO Model - Identify where your MedTech company breaks'
   });
 });
 app.get('/operate', (req, res) => {
   res.render('operate', {
-    title: 'Operate - OpenCRO'
+    title: 'OpenCRO Operate - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/stress', (req, res) => {
   res.render('stress-test', {
-    title: 'Revenue assurance demo - OpenCRO'
+    title: 'OpenCRO Stress Test - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/stress-test', (req, res) => {
   res.render('stress-test', {
-    title: 'Revenue assurance demo - OpenCRO'
+    title: 'OpenCRO Stress Test - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/fda-cyber', (req, res) => {
   res.render('fda-cyber', {
-    title: 'Cyber and privacy stress test - OpenCRO'
+    title: 'OpenCRO FDA Cyber - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/patient-safety', (req, res) => {
   res.render('patient-safety', {
-    title: 'Clinical AI stress test - OpenCRO'
+    title: 'OpenCRO Patient Safety - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/assure-revenue', (req, res) => {
   res.render('assure-revenue', {
-    title: 'Assure Revenue - OpenCRO'
+    title: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/ai-threats', (req, res) => {
   res.render('ai-threats', {
-    title: 'AI Threats - OpenCRO'
+    title: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/get-peace', (req, res) => {
   res.render('get-peace', {
-    title: 'Get peace of mind - OpenCRO'
+    title: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/assure-ai-revenue', (req, res) => {
   res.render('assure-ai-revenue', {
-    title: 'Assure revenue from your AI - OpenCRO',
-    ogTitle: 'Assure revenue from your AI - OpenCRO',
-    ogDescription: 'ASSURE REVENUE FROM YOUR AI—BEFORE DEALS STALL OR SLIP'
+    title: 'OpenCRO - Identify where your MedTech company breaks',
+    ogTitle: 'OpenCRO - Identify where your MedTech company breaks',
+    ogDescription: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/assure-revenue-premarket', (req, res) => {
   res.render('assure-revenue-premarket', {
-    title: 'Assure revenue before FDA delays - OpenCRO',
-    ogTitle: 'Assure revenue before FDA delays - OpenCRO',
-    ogDescription: 'ASSURE REVENUE BEFORE FDA DELAYS YOUR SUBMISSION'
+    title: 'OpenCRO - Identify where your MedTech company breaks',
+    ogTitle: 'OpenCRO - Identify where your MedTech company breaks',
+    ogDescription: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
 app.get('/assure-revenue-deployment', (req, res) => {
   res.render('assure-revenue-deployment', {
-    title: 'Assure revenue before field failures - OpenCRO',
-    ogTitle: 'Assure revenue before system fails - OpenCRO',
-    ogDescription: 'ASSURE REVENUE BEFORE YOUR SYSTEM FAILS IN THE FIELD'
+    title: 'OpenCRO - Identify where your MedTech company breaks',
+    ogTitle: 'OpenCRO - Identify where your MedTech company breaks',
+    ogDescription: 'OpenCRO - Identify where your MedTech company breaks'
   });
 });
 
