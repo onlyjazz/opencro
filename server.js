@@ -21,9 +21,15 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/assure', (req, res) => {
+  res.render('assure', {
+    title: 'Assure revenue, reputation, regulatory - OpenCRO'
+  });
+});
+
 app.get('/clear', (req, res) => {
-  res.render('clear', {
-    title: 'Get FDA-Ready - OpenCRO'
+  res.render('assure', {
+    title: 'Assure revenue, reputation, regulatory - OpenCRO'
   });
 });
 
