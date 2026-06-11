@@ -1,5 +1,8 @@
 <section class="section hero-section">
   <div class="container">
+    <% if (typeof subheading !== 'undefined') { %>
+      <p class="hero-subheading"><%- subheading %></p>
+    <% } %>
     <div class="hero">
       <div class="hero-content">
         <% if (typeof eyebrow !== 'undefined') { %>

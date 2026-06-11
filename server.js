@@ -116,6 +116,12 @@ app.get('/assure-revenue-deployment', (req, res) => {
   });
 });
 
+app.get('/pricing', (req, res) => {
+  res.render('pricing', {
+    title: 'OpenCRO Pricing - Fixed Outcome. Fixed Price.'
+  });
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).render('404', { title: 'Page Not Found' });
