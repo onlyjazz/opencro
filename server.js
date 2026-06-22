@@ -122,6 +122,82 @@ app.get('/pricing', (req, res) => {
   });
 });
 
+app.get('/downloads', (req, res) => {
+  res.render('downloads', {
+    title: 'OpenCRO Downloads - Free Resources & Threat Modeling Guides',
+    ogTitle: 'Download MedTech Threat Modeling Guides - OpenCRO',
+    ogDescription: 'Free business threat modeling guide for medical device companies. Download FDA compliance resources and cybersecurity frameworks from OpenCRO.'
+  });
+});
+
+// Sitemap for SEO
+app.get('/sitemap.xml', (req, res) => {
+  res.type('application/xml');
+  res.send(`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://opencro.com/</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/downloads</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/pricing</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/assure</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/model</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/operate</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/stress-test</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/fda-cyber</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/patient-safety</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opencro.com/foundation</loc>
+    <lastmod>2024-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>`);
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).render('404', { title: 'Page Not Found' });
