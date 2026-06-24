@@ -35,25 +35,14 @@
   <script defer>
     // Defer interactive scripts to after page render
     document.addEventListener('DOMContentLoaded', function() {
-      // Sticky header on scroll - throttled to reduce forced reflows
+      // Sticky header on scroll with passive listener for better performance
       const header = document.getElementById('header');
-      let lastScrollY = 0;
-      let scrollTimeout = null;
       
-      const updateHeaderState = () => {
-        const scrolled = lastScrollY > 50;
-        if (scrolled) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
+      const handleScroll = () => {
+        header.classList.toggle('scrolled', window.scrollY > 50);
       };
       
-      window.addEventListener('scroll', () => {
-        lastScrollY = window.scrollY;
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(updateHeaderState, 50);
-      });
+      window.addEventListener('scroll', handleScroll, { passive: true });
 
       // Smooth scroll for navigation links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
