@@ -109,7 +109,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 0.875rem 2rem;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -123,7 +123,7 @@ nav {
 }
 
 .logo-image {
-  height: 40px;
+  height: 35px;
   display: flex;
   align-items: center;
 }
@@ -132,14 +132,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 0.875rem 2rem;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
 .nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   list-style: none;
   flex: 1;
   justify-content: center;
@@ -163,7 +163,7 @@ nav {
 footer {
   background-color: rgba(11, 11, 11, 0.95);
   border-top: 1px solid rgba(245, 245, 245, 0.1);
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin-top: 3rem;
 }
 
@@ -171,14 +171,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 0.875rem 2rem;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
 .footer-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.75rem;
   list-style: none;
   flex-wrap: wrap;
   margin: 0;
