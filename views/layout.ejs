@@ -14,11 +14,13 @@
   <!-- Preload CSS to improve performance -->
   <link rel="preload" href="/css/main.min.css" as="style">
   <link rel="stylesheet" href="/css/main.min.css">
-  <!-- Google Analytics (async to not block rendering) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SZ15NHG6C"></script>
+  <!-- Google Analytics deferred to avoid blocking render -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+  </script>
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-1SZ15NHG6C"></script>
+  <script defer>
     gtag('js', new Date());
     gtag('config', 'G-1SZ15NHG6C');
   </script>
@@ -33,14 +35,24 @@
   <script defer>
     // Defer interactive scripts to after page render
     document.addEventListener('DOMContentLoaded', function() {
-      // Sticky header on scroll
+      // Sticky header on scroll - throttled to reduce forced reflows
       const header = document.getElementById('header');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+      let lastScrollY = 0;
+      let scrollTimeout = null;
+      
+      const updateHeaderState = () => {
+        const scrolled = lastScrollY > 50;
+        if (scrolled) {
           header.classList.add('scrolled');
         } else {
           header.classList.remove('scrolled');
         }
+      };
+      
+      window.addEventListener('scroll', () => {
+        lastScrollY = window.scrollY;
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(updateHeaderState, 50);
       });
 
       // Smooth scroll for navigation links
