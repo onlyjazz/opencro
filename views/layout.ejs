@@ -14,20 +14,6 @@
   <!-- Preload CSS to improve performance -->
   <link rel="preload" href="/css/main.min.css" as="style">
   <link rel="stylesheet" href="/css/main.min.css">
-  <!-- Google Analytics loaded after page render to avoid layout interference -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    // Load GTM after page is fully rendered
-    window.addEventListener('load', function() {
-      var script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-1SZ15NHG6C';
-      script.async = true;
-      document.head.appendChild(script);
-      gtag('js', new Date());
-      gtag('config', 'G-1SZ15NHG6C');
-    });
-  </script>
 </head>
 <body>
   <%- include('partials/nav') %>
