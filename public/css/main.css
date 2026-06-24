@@ -194,6 +194,111 @@ footer {
   color: var(--accent);
 }
 
+/* Utility Classes - Replacing inline styles */
+.no-padding {
+  padding: 0;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}
+
+.mt-3rem {
+  margin-top: 3rem;
+}
+
+.mb-025rem {
+  margin-bottom: 0.25rem;
+}
+
+.mb-05rem {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1rem {
+  margin-bottom: 1rem;
+}
+
+.mb-2rem {
+  margin-bottom: 2rem;
+}
+
+.m-top-05rem {
+  margin: 0.5rem 0 0 0;
+}
+
+.m-2rem {
+  margin: 2rem 0;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.gap-0 {
+  gap: 0;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+}
+
+.text-size-06rem {
+  font-size: 0.6rem;
+}
+
+.text-size-08rem {
+  font-size: 0.8rem;
+}
+
+.text-size-4rem {
+  font-size: 4rem;
+}
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.text-accent {
+  color: #10B981;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.mt-08rem {
+  margin-top: 0.8rem;
+}
+
+.mt-1rem {
+  margin-top: 1rem;
+}
+
+.text-size-095rem {
+  font-size: 0.95rem;
+}
+
+.text-green {
+  color: #10B981;
+}
+
+.text-brand-pink {
+  color: #FF325D;
+}
+
+.text-hero-compact {
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+}
+
+.nav-inline {
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* CTAs */
 .cta-primary {
   background-color: #097CF7;
