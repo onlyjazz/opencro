@@ -151,7 +151,7 @@ nav {
   color: var(--white);
   text-decoration: none;
   font-weight: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.9em;
   transition: color 0.2s ease;
 }
 
@@ -749,6 +749,7 @@ ul li {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+
   }
 
   .nav-links {
