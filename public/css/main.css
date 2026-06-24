@@ -20,6 +20,8 @@ body {
   font-size: 16px;
   padding-top: 80px;
   font-display: swap;
+  /* Always reserve space for scrollbar to prevent layout shift */
+  overflow-y: scroll;
 }
 
 /* Design System */
