@@ -35,15 +35,6 @@
   <script defer>
     // Defer interactive scripts to after page render
     document.addEventListener('DOMContentLoaded', function() {
-      // Sticky header on scroll with passive listener for better performance
-      const header = document.getElementById('header');
-      
-      const handleScroll = () => {
-        header.classList.toggle('scrolled', window.scrollY > 50);
-      };
-      
-      window.addEventListener('scroll', handleScroll, { passive: true });
-
       // Smooth scroll for navigation links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

@@ -7,8 +7,8 @@
 
 html {
   scroll-behavior: smooth;
-  /* Prevent scrollbar layout shift by reserving space */
-  scrollbar-gutter: stable;
+  /* Always reserve space for scrollbar to prevent layout shift on navigation */
+  overflow-y: scroll;
 }
 
 body {
@@ -20,8 +20,6 @@ body {
   font-size: 16px;
   padding-top: 80px;
   font-display: swap;
-  /* Always reserve space for scrollbar to prevent layout shift */
-  overflow-y: scroll;
 }
 
 /* Design System */
@@ -98,16 +96,9 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: transparent;
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-  border-bottom: 1px solid rgba(107, 114, 128, 0.15);
-  transition: border-color 0.3s ease;
-}
-
-header.scrolled {
   background-color: rgba(11, 11, 11, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom-color: rgba(245, 245, 245, 0.1);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.1);
 }
 
 nav {
