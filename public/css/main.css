@@ -7,8 +7,9 @@
 
 html {
   scroll-behavior: smooth;
-  /* Always reserve space for scrollbar to prevent layout shift on navigation */
-  overflow-y: scroll;
+  /* Reserve scrollbar space: primary method with fallback */
+  scrollbar-gutter: stable both-edges;
+  overflow-y: auto;
 }
 
 body {
