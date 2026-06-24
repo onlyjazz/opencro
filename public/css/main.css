@@ -129,6 +129,9 @@ nav {
   height: 35px;
   display: flex;
   align-items: center;
+  /* Prevent layout shift while image loads */
+  aspect-ratio: auto;
+  min-height: 35px;
 }
 
 .nav {
