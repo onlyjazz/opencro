@@ -118,7 +118,7 @@ nav {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: var(--font-headline-bold);
   color: #FF325D;
   text-decoration: none;
@@ -126,12 +126,12 @@ nav {
 }
 
 .logo-image {
-  height: 35px;
+  height: 32px;
   display: flex;
   align-items: center;
   /* Prevent layout shift while image loads */
   aspect-ratio: auto;
-  min-height: 35px;
+  min-height: 32px;
 }
 
 .nav {
@@ -157,7 +157,7 @@ nav {
   color: var(--white);
   text-decoration: none;
   font-weight: var(--font-body);
-  font-size: 0.9em;
+  font-size: 0.85em;
   transition: color 0.2s ease;
 }
 
