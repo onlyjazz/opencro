@@ -10,56 +10,66 @@
 <!-- Section 4: The Model -->
 <section class="section" id="model">
   <div class="container">
-    <h2 class="text-center">This is how you build a prioritized cost-effective risk mitigation operation.</h2>
-     <p class="text-center mt-4">System to VaR mapping </p>
+    <h2>Business Threat Modeling.</h2>
+    <p class="mt-4">What risks really count for your business?<br>
+    How we go from story-telling to risk-analysis in 2 hours and 2 minutes.</p>
+    
+    <p class="text-gray text-size-095rem">
+      Danny Lieberman, OpenCRO founder leads you in a 2 hour workshop.
+      <br>You and your team tell stories about how your device, patients, customers and business can be attacked.
+      <br>We write these stories on paper cards using sharpies.
+      <br>OpenCRO agents then scan the cards and process them into the threat database. Another set of agents write the analysis.
+      <br>2 minutes later you have a complete threat model and analysis.
+    </p>
     <div class="bordered-box threat-model">
-      <div class="threat-model-step">SYSTEM</div>
-      <div class="threat-model-line">↓</div>
-      <div class="threat-model-step">ASSETS</div>
-      <div class="threat-model-line">↓</div>
-      <div class="threat-model-step">THREATS</div>
-      <div class="threat-model-line">↓</div>
-      <div class="threat-model-step">COUNTERMEASURES</div>
-      <div class="threat-model-line">↓</div>
-      <div class="threat-model-step text-brand-pink">EXPLOITABILITY</div>
-      <div class="threat-model-line">↓</div>
-      <div class="threat-model-step text-green">VALUE AT RISK</div>
+      <img src="/images/opencro_risk_analysis_loop.png" alt="The Risk Analysis Loop - 7-Step Methodology" class="risk-analysis-diagram" />
     </div>
-    <p class="text-center mt-4">System architecture → computed VaR in dollars</p>
-    <p class="text-center text-gray text-size-095rem mt-1rem">Prioritized, cost-effective cyber and privacy countermeasure plan to reduce your Reputation, Revenue, Regulatory exposure.</p>
+    <h3>The risks that really count for your business.</h3>
+    <div class="bordered-box threat-model">
+      <img src="/images/the-big-picture.png" alt="The Big Picture" class="risk-analysis-diagram" />
+    </div>
+
+    <div class="guide-cta">
+      <h3>Risk-driven software in a post AI, post-privacy era</h3>
+      <p>Learn how to identify and mitigate the cyber and privacy risks most likely to impact your AI-enabled medical device company.</p>
+      <a href="/BusinessThreatModeling-OpenCRO.pdf" class="cta-primary cta-primary-lg">Download the Guide</a>
+    </div>
+
   </div>
 </section>
 
 <!-- Final CTA -->
     <section class="section" id="model-entry">
-      <div class="container text-center">
-        <h2>Identify where your company breaks</h2>
-        
-        <% if (typeof isStress !== 'undefined' && isStress) { %>
-          <!-- Video Section -->
-          <div class="m-2rem aspect-video">
-            <iframe 
-              width="100%" 
-              height="100%" 
-              src="https://www.youtube.com/embed/on9L0B1E3o0" 
-              title="Identify where your company breaks"
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
-          </div>
+      <div class="container">
+        <div class="guide-cta">
+          <h3>Identify where your company breaks</h3>
           
-          <!-- Embedded Calendly -->
-          <div class="m-2rem">
-            <iframe 
-              src="https://calendly.com/danny-lieberman/opencro-stress-test?embed_domain=opencro.com&embed_type=Inline" 
-              width="100%" 
-              height="630" 
-              frameborder="0">
-            </iframe>
-          </div>
-        <% } else { %>
-          <a href="https://calendly.com/danny-lieberman/opencro-stress-test" target="_blank" class="cta-calendly">Talk to me</a>
-        <% } %>
+          <% if (typeof isStress !== 'undefined' && isStress) { %>
+            <!-- Video Section -->
+            <div class="m-2rem aspect-video">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/on9L0B1E3o0" 
+                title="Identify where your company breaks"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            
+            <!-- Embedded Calendly -->
+            <div class="m-2rem">
+              <iframe 
+                src="https://calendly.com/danny-lieberman/opencro-stress-test?embed_domain=opencro.com&embed_type=Inline" 
+                width="100%" 
+                height="630" 
+                frameborder="0">
+              </iframe>
+            </div>
+          <% } else { %>
+            <a href="https://calendly.com/danny-lieberman/opencro-stress-test" target="_blank" class="cta-primary cta-primary-lg">Talk to me</a>
+          <% } %>
+        </div>
       </div>
     </section>

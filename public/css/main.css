@@ -517,9 +517,9 @@ footer {
 .bordered-box.threat-model {
   align-items: center;
   gap: 0.55rem;
-  min-width: clamp(320px, 40%, 520px);
-  padding-left: 40px;
-  padding-right: 40px;
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
 }
 
 .bordered-box--full .buy-paths {
@@ -545,6 +545,41 @@ footer {
   color: #8B92A3;
   font-size: 1.25rem;
   line-height: 0.5;
+}
+
+.risk-analysis-diagram {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.guide-cta {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background-color: rgba(9, 124, 247, 0.08);
+  border: 1px solid rgba(9, 124, 247, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.guide-cta h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.guide-cta p {
+  margin: 0;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.guide-cta .cta-primary {
+  margin-top: 0.5rem;
 }
 
 /* System Overview (Pricing Reference) */
