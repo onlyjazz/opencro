@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build:css": "npx clean-css-cli -o public/css/main.min.css public/css/main.css"
   },
   "keywords": [],
   "author": "",
