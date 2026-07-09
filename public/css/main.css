@@ -80,6 +80,17 @@ p {
   line-height: 1.8;
 }
 
+/* Links */
+a {
+  color: #4DA6FF;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #80C4FF;
+}
+
 /* Layout Container */
 .container {
   max-width: var(--max-width);
