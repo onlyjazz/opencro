@@ -70,6 +70,8 @@ h3 {
 h4 {
   font-size: 1.25rem;
   font-weight: var(--font-headline-bold);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -712,6 +714,29 @@ ul {
 ul li {
   font-size: 1.1rem;
   line-height: 2;
+}
+
+/* Policy Styles */
+.policy-text {
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  color: rgba(245, 245, 245, 0.8);
+}
+
+.policy-list {
+  list-style: decimal;
+  padding-left: 2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.policy-list li {
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+  color: rgba(245, 245, 245, 0.75);
 }
 
 /* Section Background & Borders */

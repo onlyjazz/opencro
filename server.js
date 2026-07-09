@@ -130,6 +130,12 @@ app.get('/downloads', (req, res) => {
   });
 });
 
+app.get('/privacy', (req, res) => {
+  res.render('privacy', {
+    title: 'OpenCRO Privacy Policy'
+  });
+});
+
 // Sitemap for SEO
 app.get('/sitemap.xml', (req, res) => {
   res.type('application/xml');
