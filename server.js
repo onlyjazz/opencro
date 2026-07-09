@@ -144,6 +144,12 @@ app.get('/tos', (req, res) => {
   });
 });
 
+app.get('/risk-analysis', (req, res) => {
+  res.render('risk-analysis', {
+    title: 'Risk Analysis Library - OpenCRO'
+  });
+});
+
 // Sitemap for SEO
 app.get('/sitemap.xml', (req, res) => {
   res.type('application/xml');
