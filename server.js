@@ -136,6 +136,12 @@ app.get('/privacy', (req, res) => {
   });
 });
 
+app.get('/tos', (req, res) => {
+  res.render('tos', {
+    title: 'OpenCRO Terms of Service'
+  });
+});
+
 // Sitemap for SEO
 app.get('/sitemap.xml', (req, res) => {
   res.type('application/xml');
