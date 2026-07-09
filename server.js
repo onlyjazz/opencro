@@ -132,13 +132,15 @@ app.get('/downloads', (req, res) => {
 
 app.get('/privacy', (req, res) => {
   res.render('privacy', {
-    title: 'OpenCRO Privacy Policy'
+    title: 'OpenCRO Privacy Policy',
+    noindex: true
   });
 });
 
 app.get('/tos', (req, res) => {
   res.render('tos', {
-    title: 'OpenCRO Terms of Service'
+    title: 'OpenCRO Terms of Service',
+    noindex: true
   });
 });
 
