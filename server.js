@@ -17,102 +17,102 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'OpenCRO - How much of your value is at risk?'
   });
 });
 
 app.get('/assure', (req, res) => {
   res.render('assure', {
-    title: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'OpenCRO - How much of your value is at risk?'
   });
 });
 
 app.get('/clear', (req, res) => {
   res.render('assure', {
-    title: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'OpenCRO - How much of your value is at risk?'
   });
 });
 
 app.get('/foundation', (req, res) => {
   res.render('foundation', {
-    title: 'OpenCRO Foundation'
+    title: 'OpenCRO Foundation - How much of your value is at risk?'
   });
 });
 
 app.get('/model', (req, res) => {
   res.render('model', {
-    title: 'OpenCRO Model - Identify where your MedTech company breaks'
+    title: 'OpenCRO Model - How much of your value is at risk?'
   });
 });
 app.get('/operate', (req, res) => {
   res.render('operate', {
-    title: 'OpenCRO Operate - Identify where your MedTech company breaks'
+    title: 'OpenCRO Operate - How much of your value is at risk?'
   });
 });
 
 app.get('/stress', (req, res) => {
   res.render('stress-test', {
-    title: 'OpenCRO Stress Test - Identify where your MedTech company breaks'
+    title: 'OpenCRO Stress Test - How much of your value is at risk?'
   });
 });
 
 app.get('/stress-test', (req, res) => {
   res.render('stress-test', {
-    title: 'OpenCRO Stress Test - Identify where your MedTech company breaks'
+    title: 'OpenCRO Stress Test - How much of your value is at risk?'
   });
 });
 
 app.get('/fda-cyber', (req, res) => {
   res.render('fda-cyber', {
-    title: 'OpenCRO FDA Cyber - Identify where your MedTech company breaks'
+    title: 'OpenCRO FDA Cyber - How much of your value is at risk?'
   });
 });
 
 app.get('/patient-safety', (req, res) => {
   res.render('patient-safety', {
-    title: 'OpenCRO Patient Safety - Identify where your MedTech company breaks'
+    title: 'OpenCRO Patient Safety - How much of your value is at risk?'
   });
 });
 
 app.get('/assure-revenue', (req, res) => {
   res.render('assure-revenue', {
-    title: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'Your science works. Your value exposed'
   });
 });
 
 app.get('/ai-threats', (req, res) => {
   res.render('ai-threats', {
-    title: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'OpenCRO - How much of your value is at risk?'
   });
 });
 
 app.get('/get-peace', (req, res) => {
   res.render('get-peace', {
-    title: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'OpenCRO - How much of your value is at risk?'
   });
 });
 
 app.get('/assure-ai-revenue', (req, res) => {
   res.render('assure-ai-revenue', {
-    title: 'OpenCRO - Identify where your MedTech company breaks',
-    ogTitle: 'OpenCRO - Identify where your MedTech company breaks',
-    ogDescription: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'OpenCRO - How much of your value is at risk?',
+    ogTitle: 'Your science works. Your value exposed',
+    ogDescription: 'Your science works. Your value exposed'
   });
 });
 
 app.get('/assure-revenue-premarket', (req, res) => {
   res.render('assure-revenue-premarket', {
-    title: 'OpenCRO - Identify where your MedTech company breaks',
-    ogTitle: 'OpenCRO - Identify where your MedTech company breaks',
-    ogDescription: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'OpenCRO identifies the cyber and privacy threats most likely to impact revenue, regulatory approval, reputation, and patients. ',
+    ogTitle: 'Your science works. Your value exposed',
+    ogDescription: 'Your science works. Your value exposed'
   });
 });
 
 app.get('/assure-revenue-deployment', (req, res) => {
   res.render('assure-revenue-deployment', {
-    title: 'OpenCRO - Identify where your MedTech company breaks',
-    ogTitle: 'OpenCRO - Identify where your MedTech company breaks',
-    ogDescription: 'OpenCRO - Identify where your MedTech company breaks'
+    title: 'OpenCRO - How much of your value is at risk?',
+    ogTitle: 'Your science works. Your value exposed',
+    ogDescription: 'Your science works. Your value exposed'
   });
 });
 
