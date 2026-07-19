@@ -150,6 +150,12 @@ app.get('/risk-analysis', (req, res) => {
   });
 });
 
+app.get('/contact', (req, res) => {
+  res.render('contact', {
+    title: 'Get in Touch - OpenCRO'
+  });
+});
+
 // Sitemap for SEO
 app.get('/sitemap.xml', (req, res) => {
   res.type('application/xml');
