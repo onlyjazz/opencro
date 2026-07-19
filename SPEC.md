@@ -80,7 +80,7 @@ Subhead:
 Fixed-price. Submission-ready. No rework.
 
 Proof:
-42 companies • 14 FDA clearances • 0 rework requests
+41 companies • 14 FDA clearances • 0 rework requests
 
 CTA:
 - Get FDA-Ready – $43K → /clear
@@ -263,7 +263,7 @@ Who this is for
 - Teams that need defensible answers
 
 Closing:
-42 companies have already gone through this system  
+41 companies have already gone through this system  
 They don't rework their submissions
 
 ---
