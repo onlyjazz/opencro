@@ -362,7 +362,7 @@ footer {
 
 /* Minimal Typography System */
 .text-eyebrow {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: #F5F5F5;
   margin-bottom: 1rem;
@@ -370,7 +370,7 @@ footer {
 }
 
 .text-hero {
-  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
   line-height: 1.2;
   font-weight: 600;
   color: #F5F5F5;
@@ -1100,7 +1100,7 @@ ul li {
   }
 
   .text-eyebrow {
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     margin-bottom: 0.75rem;
   }
 
@@ -1310,7 +1310,7 @@ ul li {
   }
 
   .text-eyebrow {
-    font-size: 0.6rem;
+    font-size: 0.85rem;
     margin-bottom: 0.5rem;
   }
 
