@@ -4,92 +4,13 @@
     <div class="pricing-header">
       <h1>Fixed Outcome. Fixed Price.</h1>
       <p class="pricing-subtitle">Choose an OpenCRO tier</p>
-      <p class="text-eyebrow">Start with Foundation. Upgrade when your device, AI, or regulatory requirements change.</p>
+      <p class="text-eyebrow">Start with Model. Upgrade when your device, AI, or regulatory requirements change.</p>
     </div>
 
     <!-- Pricing Cards Grid -->
     <div class="pricing-grid">
-      <!-- Foundation Tier -->
-      <div class="pricing-card pricing-card-featured-foundation">
-        <div class="pricing-card-header">
-          <h3>Foundation</h3>
-          <div class="price">
-            <span class="currency">$</span><span class="amount">3k</span><span class="period">/year</span>
-          </div>
-        </div>
-        <p class="pricing-description">Outcome: Understand your cyber and privacy exposure.</p>
-        <ul class="features-list">
-          <li class="feature-item feature-included">
-            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <span>Understand your exposure</span>
-          </li>
-          <li class="feature-item feature-included">
-            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <span>Threat story (how your device, customer and patients actually get attacked)</span>
-          </li>
-          <li class="feature-item feature-included">
-            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <span>Cyber and privacy SOPs</span>
-          </li>
-          <li class="feature-item feature-included">
-            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <span>4x/year advisory calls</span>
-          </li>
-          <li class="feature-item feature-included">
-            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <span>Support: Email</span>
-          </li>
-          <li class="feature-item feature-excluded">
-            <svg class="feature-icon-disabled" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-            <span>Prioritized, cost-effective countermeasure plan</span>
-          </li>
-          <li class="feature-item feature-excluded">
-            <svg class="feature-icon-disabled" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-            <span>Top risk threats after mitigation</span>
-          </li>
-          <li class="feature-item feature-excluded">
-            <svg class="feature-icon-disabled" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-            <span>Architecture review</span>
-          </li>
-          <li class="feature-item feature-excluded">
-            <svg class="feature-icon-disabled" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-            <span>Threat model and analysis</span>
-          </li>
-          <li class="feature-item feature-excluded">
-            <svg class="feature-icon-disabled" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-            <span>Quarterly audits & threat model updates</span>
-          </li>
-        </ul>
-        <a href="https://calendly.com/danny-lieberman/1-1-call" target="_blank" class="cta-button cta-primary">Start here</a>
-      </div>
-
       <!-- Model Tier -->
-      <div class="pricing-card">
+      <div class="pricing-card pricing-card-featured-model">
         <div class="pricing-card-header">
           <h3>Model</h3>
           <div class="price">
@@ -160,7 +81,7 @@
             <span>Quarterly audits & threat model updates</span>
           </li>
         </ul>
-        <a href="https://calendly.com/danny-lieberman/1-1-call" target="_blank" class="cta-button cta-primary">Get Started</a>
+        <a href="https://calendly.com/danny-lieberman/1-1-call" target="_blank" class="cta-button cta-primary">Start here</a>
       </div>
 
       <!-- Operate Tier -->
@@ -362,7 +283,7 @@
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -405,13 +326,13 @@
   letter-spacing: 0.1em;
 }
 
-.pricing-card-featured-foundation {
+.pricing-card-featured-model {
   border: 2px solid #065F46;
   background: linear-gradient(135deg, rgba(6, 95, 70, 0.1) 0%, rgba(31, 41, 55, 0.8) 100%);
   box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
 }
 
-.pricing-card-featured-foundation::before {
+.pricing-card-featured-model::before {
   content: 'START HERE';
   position: absolute;
   top: -12px;
