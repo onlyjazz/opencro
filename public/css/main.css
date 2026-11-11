@@ -389,12 +389,6 @@ footer {
   font-weight: 600;
 }
 
-/* First paragraph in bridge - the offer line */
-.text-bridge:first-of-type {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
 /* Subheader style for consistent section headers in bridge content */
 .subheader {
   font-size: 0.8rem;
@@ -725,6 +719,19 @@ ul {
 ul li {
   font-size: 1.1rem;
   line-height: 2;
+}
+
+/* Standard bulleted list (matches .text-bridge paragraph styling) */
+.list-bullets {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 1rem 0;
+}
+
+.list-bullets li {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #A0A9B8;
 }
 
 /* Policy / Legal Pages */

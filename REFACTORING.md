@@ -21,20 +21,18 @@ Navigation component with:
 - Links properly routed to `/#section-id` for smooth scrolling
 - Uses semantic class names
 
-### 3. `views/partials/hero.ejs`
-Flexible hero component supporting:
-- **Props**: eyebrow, headline, bridge, proof, primaryCTA, secondaryCTA, diagram
-- Optional fields using `locals.*` checks
-- HTML parsing for multi-line text (`<br>` tags preserved via `<%- %>`)
-- Responsive layout with optional diagram column
-- All styling via CSS classes
+### 3. Hero markup (inlined, no partial)
+The hero was previously a `views/partials/hero.ejs` component driven by props. It is now written inline in each view:
+- `views/index.ejs` — subheading, headline, one bridge paragraph, CTA
+- `views/assure.ejs`, `views/foundation.ejs`, `views/model.ejs`, `views/operate.ejs` — headline + bridge paragraph
+- Shared classes: `.hero-section`, `.hero`, `.hero-content`, `.hero-subheading`, `.text-hero`, `.text-bridge`, `.hero-ctas`
 
 ## Files Refactored
 
 ### `views/index.ejs`
 - Removed HTML boilerplate (handled by layout)
 - Inlined hero configuration at top
-- Hero component renders with all props (eyebrow, headline, bridge, proof, CTAs, diagram)
+- Hero markup written inline (subheading, headline, bridge paragraph, CTA)
 - All remaining sections use semantic CSS classes
 - No inline styles
 
@@ -73,11 +71,11 @@ All styling uses established CSS classes from `/css/main.css`:
 ✅ **Identical to original** — Zero design changes. All refactoring is internal structure only.
 
 ## Benefits
-1. **DRY Principle** — Layout, nav, and hero are now single sources of truth
-2. **Maintainability** — Hero component reduces duplication across 3 pages
+1. **DRY Principle** — Layout and nav are single sources of truth
+2. **Maintainability** — Hero markup lives in each page, so there is no prop or template indirection to debug
 3. **Clean Markup** — Zero inline styles in view files
 4. **Scalability** — Easy to add new pages that extend layout
-5. **Component Reuse** — Hero component can be used elsewhere with different props
+5. **No Indirection** — Hero content is plain markup, so page copy is edited directly in the view
 
 ## Testing
 All three pages render correctly through the layout system:
