@@ -21,10 +21,9 @@ app.get('/', (req, res) => {
   });
 });
 
+// Legacy URL: Assure tier renamed to FDA Cyber
 app.get('/assure', (req, res) => {
-  res.render('assure', {
-    title: 'OpenCRO - How much of your value is at risk?'
-  });
+  res.redirect(301, '/fda-cyber');
 });
 
 app.get('/clear', (req, res) => {
@@ -39,15 +38,25 @@ app.get('/foundation', (req, res) => {
   });
 });
 
-app.get('/model', (req, res) => {
+app.get('/engineering', (req, res) => {
   res.render('model', {
-    title: 'OpenCRO Model - How much of your value is at risk?'
+    title: 'OpenCRO Engineering - How much of your value is at risk?'
   });
 });
-app.get('/operate', (req, res) => {
+
+// Legacy URL: Model tier renamed to Engineering
+app.get('/model', (req, res) => {
+  res.redirect(301, '/engineering');
+});
+app.get('/post-market', (req, res) => {
   res.render('operate', {
-    title: 'OpenCRO Operate - How much of your value is at risk?'
+    title: 'OpenCRO Post-market - How much of your value is at risk?'
   });
+});
+
+// Legacy URL: Operate tier renamed to Post-market
+app.get('/operate', (req, res) => {
+  res.redirect(301, '/post-market');
 });
 
 app.get('/stress', (req, res) => {
@@ -63,7 +72,7 @@ app.get('/stress-test', (req, res) => {
 });
 
 app.get('/fda-cyber', (req, res) => {
-  res.render('fda-cyber', {
+  res.render('assure', {
     title: 'OpenCRO FDA Cyber - How much of your value is at risk?'
   });
 });
@@ -178,20 +187,14 @@ app.get('/sitemap.xml', (req, res) => {
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://opencro.com/assure</loc>
-    <lastmod>2024-06-22</lastmod>
+    <loc>https://opencro.com/engineering</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://opencro.com/model</loc>
-    <lastmod>2024-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://opencro.com/operate</loc>
-    <lastmod>2024-06-22</lastmod>
+    <loc>https://opencro.com/post-market</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -203,9 +206,9 @@ app.get('/sitemap.xml', (req, res) => {
   </url>
   <url>
     <loc>https://opencro.com/fda-cyber</loc>
-    <lastmod>2024-06-22</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://opencro.com/patient-safety</loc>
